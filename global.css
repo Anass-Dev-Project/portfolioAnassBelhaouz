@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens for ultra-modern green theme */
+  /* mon rooot*/
   --background: #ffffff;
   --foreground: #374151;
   --card: #f0fdf4;

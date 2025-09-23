@@ -26,7 +26,7 @@ class PortfolioApp {
     particleContainer.className = "particle-background"
     document.body.appendChild(particleContainer)
 
-    // Create floating particles
+    
     const particleCount = 50
     this.particles = []
 
@@ -34,11 +34,11 @@ class PortfolioApp {
       const particle = document.createElement("div")
       particle.className = "particle"
 
-      // Random positioning
+      
       particle.style.left = Math.random() * 100 + "%"
       particle.style.top = Math.random() * 100 + "%"
 
-      // Random animation delay and duration
+      
       particle.style.animationDelay = Math.random() * 6 + "s"
       particle.style.animationDuration = Math.random() * 4 + 6 + "s"
 
@@ -56,11 +56,11 @@ class PortfolioApp {
   animateParticles() {
     const animate = () => {
       this.particles.forEach((particle) => {
-        // Update position
+       
         particle.x += particle.vx
         particle.y += particle.vy
 
-        // Bounce off edges
+        
         if (particle.x <= 0 || particle.x >= window.innerWidth) {
           particle.vx *= -1
         }
@@ -68,11 +68,11 @@ class PortfolioApp {
           particle.vy *= -1
         }
 
-        // Keep particles in bounds
+       
         particle.x = Math.max(0, Math.min(window.innerWidth, particle.x))
         particle.y = Math.max(0, Math.min(window.innerHeight, particle.y))
 
-        // Update DOM element position
+        
         particle.element.style.left = particle.x + "px"
         particle.element.style.top = particle.y + "px"
       })
@@ -100,7 +100,7 @@ class PortfolioApp {
     const updateConnections = () => {
       connectionContainer.innerHTML = ""
 
-      // Create connections between nearby particles
+    
       for (let i = 0; i < this.particles.length; i++) {
         for (let j = i + 1; j < this.particles.length; j++) {
           const p1 = this.particles[i]
@@ -158,7 +158,7 @@ class PortfolioApp {
   }
 
   handleResize() {
-    // Update particle positions on resize
+   
     if (this.particles) {
       this.particles.forEach((particle) => {
         if (particle.x > window.innerWidth) {
@@ -196,7 +196,7 @@ class PortfolioApp {
       dropdown.addEventListener("mouseenter", showMenu)
       dropdown.addEventListener("mouseleave", hideMenu)
 
-      // Keyboard navigation
+      
       btn.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault()
@@ -208,7 +208,7 @@ class PortfolioApp {
         }
       })
 
-      // Close on outside click
+    
       document.addEventListener("click", (e) => {
         if (!dropdown.contains(e.target)) {
           dropdown.classList.remove("active")
@@ -222,7 +222,7 @@ class PortfolioApp {
     const toggles = document.querySelectorAll(".toggle-switch")
     const html = document.documentElement
 
-    // Check for saved theme preference or default to dark
+    
     const savedTheme = localStorage.getItem("theme")
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
     const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light")
@@ -232,7 +232,7 @@ class PortfolioApp {
     toggles.forEach((toggle) => {
       const slider = toggle.querySelector(".toggle-slider")
 
-      // Set initial state
+    
       if (initialTheme === "dark") {
         toggle.classList.add("active")
       }
@@ -244,7 +244,7 @@ class PortfolioApp {
         this.setTheme(newTheme)
         localStorage.setItem("theme", newTheme)
 
-        // Update all toggles
+       
         toggles.forEach((t) => {
           if (newTheme === "dark") {
             t.classList.add("active")
@@ -255,7 +255,7 @@ class PortfolioApp {
       })
     })
 
-    // Listen for system theme changes
+    
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
       if (!localStorage.getItem("theme")) {
         this.setTheme(e.matches ? "dark" : "light")
@@ -284,7 +284,7 @@ class PortfolioApp {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible")
 
-          // Trigger skill bar animations when skills section is visible
+         
           if (entry.target.classList.contains("competences")) {
             this.animateSkillBars()
           }
@@ -292,7 +292,7 @@ class PortfolioApp {
       })
     }, observerOptions)
 
-    // Observe all sections and cards
+    
     const elementsToAnimate = document.querySelectorAll(`
       .hero-content,
       .presentation-card,
@@ -347,7 +347,7 @@ class PortfolioApp {
         return
       }
 
-      // Show loading state
+     
       submitBtn.classList.add("loading")
       btnText.textContent = "Envoi en cours"
       submitBtn.disabled = true
@@ -363,10 +363,10 @@ class PortfolioApp {
 
         console.log("[v0] Form data:", data)
 
-        // Simulate API call
+      
         await this.simulateFormSubmission(data)
 
-        // Show success state
+       
         this.showNotification("Message envoyé avec succès !", "success")
         form.reset()
         this.updateCharacterCount()
@@ -374,7 +374,7 @@ class PortfolioApp {
         console.error("[v0] Form submission error:", error)
         this.showNotification("Erreur lors de l'envoi. Veuillez réessayer.", "error")
       } finally {
-        // Reset button state
+        
         submitBtn.classList.remove("loading")
         btnText.textContent = originalText
         submitBtn.disabled = false
@@ -434,7 +434,7 @@ class PortfolioApp {
   }
 
   async simulateFormSubmission(data) {
-    // Simulate network delay
+    
     return new Promise((resolve) => {
       setTimeout(resolve, 2000)
     })
@@ -489,7 +489,7 @@ class PortfolioApp {
   }
 
   setupSmoothScrolling() {
-    // Global scroll function
+    
     window.scrollToSection = (sectionId) => {
       const section = document.getElementById(sectionId)
       if (section) {
@@ -503,7 +503,7 @@ class PortfolioApp {
       }
     }
 
-    // Handle all anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
         e.preventDefault()
@@ -568,12 +568,12 @@ class PortfolioApp {
       }
     }
 
-    // Start typing animation after a delay
+   
     setTimeout(typeWriter, 1000)
   }
 
   showNotification(message, type = "info") {
-    // Remove existing notifications
+   
     const existing = document.querySelector(".notification")
     if (existing) {
       existing.remove()
@@ -607,12 +607,12 @@ class PortfolioApp {
 
     document.body.appendChild(notification)
 
-    // Animate in
+    
     setTimeout(() => {
       notification.style.transform = "translateX(0)"
     }, 100)
 
-    // Auto remove after 5 seconds
+    
     setTimeout(() => {
       notification.style.transform = "translateX(100%)"
       setTimeout(() => {
@@ -627,7 +627,7 @@ class PortfolioApp {
     const form = document.getElementById("contactForm")
     if (!form) return
 
-    // Real-time validation
+    
     const inputs = form.querySelectorAll("input, textarea")
     inputs.forEach((input) => {
       input.addEventListener("blur", () => {
@@ -677,14 +677,14 @@ class PortfolioApp {
     link.click()
     document.body.removeChild(link)
 
-    // Show success notification
+   
     this.showNotification("CV téléchargé avec succès !", "success")
   }
 }
 
 const portfolioApp = new PortfolioApp()
 
-// Debounce function for performance optimization
+
 function debounce(func, wait) {
   let timeout
   return function executedFunction(...args) {
@@ -697,7 +697,7 @@ function debounce(func, wait) {
   }
 }
 
-// Throttle function for scroll events
+
 function throttle(func, limit) {
   let inThrottle
   return function () {
@@ -711,7 +711,7 @@ function throttle(func, limit) {
   }
 }
 
-// Performance monitoring
+
 if (typeof performance !== "undefined") {
   window.addEventListener("load", () => {
     const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart
@@ -719,15 +719,15 @@ if (typeof performance !== "undefined") {
   })
 }
 
-// Error handling
+
 window.addEventListener("error", (e) => {
   console.error("[v0] JavaScript error:", e.error)
 })
 
-// Service worker registration for PWA capabilities (future enhancement)
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    // Future: Register service worker for offline capabilities
+    
     console.log("[v0] Service Worker support detected")
   })
 }
