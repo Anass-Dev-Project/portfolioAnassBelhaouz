@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Belhaouz Anass | BTS SIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importation des polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- En-tête du site avec navigation -->
+    <header class="header">
+        <nav class="nav">
+            <!-- Logo site -->
+            <div class="nav-brand">
+                <span class="brand-text">Anass</span>
+                <div class="brand-dot"></div>
+            </div>
+            
+            <!-- Menu de navigation principal -->
+            <div class="nav-menu">
+                <div class="theme-toggle">
+                    <div class="" id=""></div>
+                </div>
+                
+                <!-- Menu déroulant pour la section BTS SIO -->
+                <div class="dropdown" id="btsDropdown">
+                    <button class="dropdown-btn">
+                        BTS SIO
+                        <!-- Icône pour indiquer le menu déroulant -->
+                        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Sous-menu déroulant -->
+                    <div class="dropdown-menu">
+                        <a href="#presentation" class="dropdown-item">
+                            <span class="item-icon">📋</span>
+                            Accueil
+                        </a>
+                        <a href="presentation.html" class="dropdown-item">
+                            <span class="item-icon">🏆</span>
+                            Présentation
+                        </a>
+                        <a href="veille.html" class="dropdown-item">
+                            <span class="item-icon">🔍</span>
+                            Veille technologique
+                        </a>
+                        <a href="tableau.html" class="dropdown-item">
+                            <span class="item-icon">📝</span>
+                            Tableau de synthèse
+                        </a>
+                        <a href="patrimoine.html" class="dropdown-item">
+                            <span class="item-icon">📶</span>
+                            Patrimoine Informatique
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lien vers la section projets -->
+                <!-- Bouton de contact avec effet visuel -->
+                <a href="#contact" class="contact-btn">
+                    <span>Contact</span>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal du site -->
+    <main>
+        
+        <!-- Section hero - première section visible -->
+        <section class="hero">
+            <!-- Arrière-plan avec éléments décoratifs -->
+            <div class="hero-background">
+                <div class="grid-pattern"></div>
+                <!-- Éléments flottants animés -->
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+                    <div class="floating-element" style="--delay: 2s; --duration: 12s;"></div>
+                    <div class="floating-element" style="--delay: 4s; --duration: 10s;"></div>
+                </div>
+            </div>
+            
+            <!-- Contenu principal de la section hero -->
+            <div class="hero-content">
+                <!-- Ajout de la photo de profil au-dessus du badge -->
+                <div class="profile-photo">
+                    <img src="photo.png" alt="Photo de profil - Belhaouz Anass" class="profile-image">
+                </div>
+                
+                <!-- Badge indiquant la disponibilité -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Disponible pour des opportunités
+                </div>
+                
+                <!-- Titre principal avec animation -->
+                <h1 class="hero-title">
+                    <span class="greeting">Bonjour 👋</span>
+                    <span class="wave">👋</span>
+                    <br>
+                    <span class="name-line">
+                        Je suis <span class="highlight-name">Belhaouz Anass</span>
+                    </span>
+                </h1>
+                
+                <!-- Sous-titre descriptif -->
+                <p class="hero-subtitle">
+                    Étudiant en <span class="highlight">BTS Services Informatiques aux Organisations</span>
+                    <br>
+                    Passionné par le réseau et la cybersécurité
+                </p>
+                
+                <!-- Statistiques personnelles -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Compétence maîtrisées</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Section de présentation personnelle -->
+        <section id="presentation" class="presentation">
+            <div class="section-container">
+                <!-- En-tête de section -->
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span class="badge-icon">👨‍💻</span>
+                        À propos
+                    </div>
+                    <h2 class="section-title">Mon parcours</h2>
+                    <p class="section-description">
+                        Découvrez mon évolution dans le domaine de l'informatique
+                    </p>
+                </div>
+                
+                <!-- Carte de présentation -->
+                <div class="presentation-content">
+                    <div class="presentation-card">
+                        <div class="card-header">
+                            <!-- Icône de la carte -->
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 0-8-3-8-8s3-8 8-8 8 3 8 8-3 8-8 8"/>
+                                    <path d="m8 14 1-4 6 2"/>
+                                    <path d="m15 6-2-2"/>
+                                    <path d="m16 18 2 2"/>
+                                </svg>
+                            </div>
+                            <h3>Mon évolution</h3>
+                        </div>
+                        
+                        <!-- Contenu textuel de la carte -->
+                        <div class="card-content">
+                            <p>
+                                Ma passion pour l'informatique s'est affirmée lorsque j'ai choisi un Bac STI2D, option Systèmes Informatiques et Numériques.
+                                Après son obtention, je me suis orienté vers un BTS SIO, option SISR, où j'ai pu développer mes compétences en réseaux et en développement à travers de nombreux projets réalisés durant ces deux années.
+                            </p>
+                            <p>
+                                Le <span class="highlight">BTS SIO</span> m'a permis de structurer mes apprentissages et d'améliorer mon organisation, 
+                                tout en développant une expertise en réseau.
+                            </p>
+                        </div>
+                        
+                        <!-- Actions de la carte (boutons) -->
+                        <div class="card-actions">
+                            <button class="card-btn primary">
+                                <span>Télécharger mon CV</span>
+                                <!-- Icône de téléchargement -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                            <button class="card-btn secondary" onclick="scrollToSection('competences')">
+                                Voir mes compétences
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Section chronologique du parcours -->
+        <section class="journey">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span class="badge-icon">🚀</span>
+                        Parcours
+                    </div>
+                    <h2 class="section-title">Mon évolution professionnelle</h2>
+                    <p class="section-description">
+                        Un aperçu de mes expériences et formations
+                    </p>
+                </div>
+                
+                <!-- Conteneur de la timeline -->
+                <div class="timeline-container">
+                    <!-- Section des expériences professionnelles -->
+                    <div class="timeline-section">
+                        <h3 class="timeline-header">
+                            <span class="header-icon">💼</span>
+                            Expériences professionnelles
+                        </h3>
+                        <div class="timeline">
+                            <!-- Premier élément de timeline -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-badge">En cours</div>
+                                    <h4 class="timeline-title">Stage en réseau</h4>
+                                    <p class="timeline-company">LDLC Chambéry</p>
+                                    <p class="timeline-date">18 septembre 2025 - 28 octobre 2025</p>
+                                    <p class="timeline-description">
+                                        Gestions de ticket, et gestion d'un parc informatique
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Deuxième élément de timeline -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-badge completed">Terminé</div>
+                                    <h4 class="timeline-title">Stage de dévelopement</h4>
+                                    <p class="timeline-company">GF industrie</p>
+                                    <p class="timeline-date">21 mai 2024 - 21 juin 2024</p>
+                                    <p class="timeline-description">
+                                        Création de 2 site pour un particulier
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Section des formations -->
+                    <div class="timeline-section">
+                        <h3 class="timeline-header">
+                            <span class="header-icon">🎓</span>
+                            Formations
+                        </h3>
+                        <div class="timeline">
+                            <!-- Premier élément de formation -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="marker-dot"></div>
+                                    <div class="marker-line"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-badge">En cours</div>
+                                    <h4 class="timeline-title">BTS SIO option SISR</h4>
+                                    <p class="timeline-company">Cifep, Chambéry</p>
+                                    <p class="timeline-date">05 septembre 2024 - 01 juin 2026</p>
+                                    <p class="timeline-description">
+                                        Solutions d'Infrastructure, Systèmes et Réseaux
+                                    </p>
+                                </div>
+                            </div>
+                                         
+                            <!-- Deuxième élément de formation -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker">
+                                    <div class="marker-dot"></div>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="timeline-badge completed">Obtenu</div>
+                                    <h4 class="timeline-title">BAC STI2D</h4>
+                                    <p class="timeline-company">Lycée Louis Armand, Chambery</p>
+                                    <p class="timeline-date">06 septembre 2022 - 16 juin 2024</p>
+                                    <p class="timeline-description">
+                                        systèmes d'information et numérique
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Section des compétences techniques -->
+        <section id="competences" class="competences">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span class="badge-icon">⚡</span>
+                        Compétences
+                    </div>
+                    <h2 class="section-title">Mes Compétences</h2>
+                    <p class="section-description">
+                        Un aperçu de mes compétences techniques et outils favoris
+                    </p>
+                </div>
+                
+                <!-- Grille des compétences -->
+                <div class="skills-grid">
+                    <!-- Carte compétence HTML5 -->
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte compétence CSS3 -->
+                    <div class="skill-card" data-skill="css">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5,3L4.35,6.34H17.94L17.5,8.5H3.92L3.26,11.83H16.85L16.09,15.64L10.61,17.45L5.86,15.64L6.19,14H2.85L2.06,18L9.91,21L18.96,18L20.16,11.97L20.4,10.76L21.94,3H5Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte compétence JavaScript -->
+                    <div class="skill-card" data-skill="js">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte compétence BurpSuite -->
+                    <div class="skill-card" data-skill="burpsuite">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>BurpSuite</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte compétence Nmap -->
+                    <div class="skill-card" data-skill="nmap">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Nmap</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte compétence Active Directory -->
+                    <div class="skill-card" data-skill="ad">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Active Directory</h4>
+                            <div class="skill-level">
+                                <div class="" style="--level: "></div>
+                                <span class="level-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Section de contact -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="contact-layout">
+                    <!-- Informations de contact -->
+                    <div class="contact-info">
+                        <div class="section-badge">
+                            <span class="badge-icon">💬</span>
+                            Contact
+                        </div>
+                        <h2 class="section-title">Me contacter</h2>
+                        <p class="section-description">
+                            Si vous avez des questions ou des suggestions, n'hésitez pas à m'envoyer un message.
+                        </p>
+                    </div>
+                    
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <!-- Grille pour les champs nom et email -->
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Votre nom et prénom :</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Votre adresse email :</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Champ message -->
+                            <div class="form-group">
+                                <label for="message">Votre message (5000 caractères maximum) :</label>
+                                <textarea id="message" name="message" rows="6" maxlength="5000" required></textarea>
+                            </div>
+                            
+                            <!-- Pied du formulaire -->
+                            <div class="form-footer">
+                                <p class="form-disclaimer">
+                                    En cliquant sur "Envoyer", vous acceptez que ces données soient stockées 
+                                    temporairement dans une file d'attente pour optimiser le processus d'envoi de messages. 
+                                    Une fois ce processus terminé, ces données vont être supprimées de cette file d'attente.
+                                </p>
+                                
+                                <!-- Bouton d'envoi -->
+                                <button type="submit" class="submit-btn">
+                                    <span class="btn-text">Envoyer</span>
+                                    <div class="btn-glow"></div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Copyright -->
+                <p>@ Belhaouz Anass - 2025</p>
+                <!-- Liens du footer -->
+                <div class="footer-links">
+                    <a href="#mentions">Mentions légales</a>
+                </div>
+                <!-- Liens sociaux -->
+                <div class="social-links">
+                    <!-- Toggle de thème dans le footer -->
+                    <div class="theme-toggle-footer">
+                        <span></span>
+                        <div class="" id="">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lien GitHub -->
+                    <a href="https://github.com/Anass-Dev-Project" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                    </a>
+                    <!-- Lien LinkedIn -->
+                    <a href="http://linkedin.com/in/anass-belhaouz-59936b335" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
