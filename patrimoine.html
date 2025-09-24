@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr" class="dark">
 <head>
+    
     <meta charset="UTF-8">
+    <!-- Configuration de la vue pour le responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS SIO - Présentation | Portfolio Belhaouz Anass</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importation des polices Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <!-- En-tête du site avec navigation -->
     <header class="header">
         <nav class="nav">
+            <!-- Logo ou marque du site -->
             <div class="nav-brand">
                 <span class="brand-text">Anass</span>
                 <div class="brand-dot"></div>
             </div>
             
+            <!-- Menu de navigation principal -->
             <div class="nav-menu">
+                <!-- Bouton de basculement du thème (visuellement présent mais fonctionnalité à implémenter) -->
                 <div class="theme-toggle">
                     <span></span>
                     <div class="" id="">
@@ -26,19 +33,22 @@
                     </div>
                 </div>
                 
+                <!-- Menu déroulant pour la section BTS SIO -->
                 <div class="dropdown" id="btsDropdown">
                     <button class="dropdown-btn">
                         BTS SIO
+                        <!-- Icône de chevron pour indiquer le menu déroulant -->
                         <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6,9 12,15 18,9"></polyline>
                         </svg>
                     </button>
+                    <!-- Sous-menu déroulant avec l'item "Patrimoine Informatique" actif -->
                     <div class="dropdown-menu">
                         <a href="index.html" class="dropdown-item">
                             <span class="item-icon">🏠</span>
                             Accueil
                         </a>
-                        <a href="presentation.html" class="dropdown-item active">
+                        <a href="presentation.html" class="dropdown-item">
                             <span class="item-icon">📋</span>
                             Présentation
                         </a>
@@ -50,14 +60,14 @@
                             <span class="item-icon">📝</span>
                             Tableau de synthèse
                         </a>
-                        <a href="patrimoine.html" class="dropdown-item">
+                        <a href="patrimoine.html" class="dropdown-item active">
                             <span class="item-icon">📶</span>
                             Patrimoine Informatique
                         </a>
                     </div>
                 </div>
                 
-                
+                <!-- Bouton de contact avec lien vers la section contact de la page d'accueil -->
                 <a href="index.html#contact" class="contact-btn">
                     <span>Contact</span>
                     <div class="btn-glow"></div>
@@ -68,169 +78,187 @@
 
     <main>
         
+        <!-- Section hero spécifique à la page Patrimoine Informatique -->
         <section class="bts-hero">
+            <!-- Arrière-plan avec motif de grille -->
             <div class="hero-background">
                 <div class="grid-pattern"></div>
             </div>
             
-    <div class="section-container">
-    <div class="bts-header">
-        <h1 class="bts-title">Patrimoine Informatique</h1>
-    </div>
-</div>
-</section>
-
-
-<section class="bts-presentation">
-    <div class="section-container">
-        <div class="bts-content-card">
-            <h2 class="bts-section-title">Introduction</h2>
-            <p class="bts-description">
-                Le patrimoine informatique représente l'ensemble des actifs numériques d'une organisation. 
-                Il comprend les ressources matérielles, logicielles, documentaires et humaines qui constituent 
-                son système d’information et assurent son bon fonctionnement.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<section class="bts-options">
-    <div class="section-container">
-        <div class="bts-content-card">
-            <h2 class="bts-section-title">Éléments du Patrimoine Informatique</h2>
-            <p class="bts-description">
-                Le patrimoine informatique regroupe plusieurs catégories essentielles :
-            </p>
-            
-            <div class="options-list">
-                <div class="option-item">
-                    <span class="option-bullet">•</span>
-                    <span class="option-text">Les équipements matériels (ordinateurs, serveurs, réseaux)</span>
-                </div>
-                <div class="option-item">
-                    <span class="option-bullet">•</span>
-                    <span class="option-text">Les logiciels et applications</span>
-                </div>
-                <div class="option-item">
-                    <span class="option-bullet">•</span>
-                    <span class="option-text">Les données et bases de données</span>
-                </div>
-                <div class="option-item">
-                    <span class="option-bullet">•</span>
-                    <span class="option-text">La documentation technique</span>
-                </div>
-                <div class="option-item">
-                    <span class="option-bullet">•</span>
-                    <span class="option-text">Les compétences et connaissances du personnel</span>
+            <!-- Conteneur de la section avec titre principal -->
+            <div class="section-container">
+                <div class="bts-header">
+                    <h1 class="bts-title">Patrimoine Informatique</h1>
                 </div>
             </div>
-            
-            <p class="bts-description">
-                Ces composants forment un ensemble stratégique qui doit être suivi et géré efficacement.
-            </p>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <!-- Section d'introduction au patrimoine informatique -->
+        <section class="bts-presentation">
+            <div class="section-container">
+                <!-- Carte de contenu pour l'introduction -->
+                <div class="bts-content-card">
+                    <h2 class="bts-section-title">Introduction</h2>
+                    <p class="bts-description">
+                        Le patrimoine informatique représente l'ensemble des actifs numériques d'une organisation. 
+                        Il comprend les ressources matérielles, logicielles, documentaires et humaines qui constituent 
+                        son système d'information et assurent son bon fonctionnement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section détaillant les éléments du patrimoine informatique -->
+        <section class="bts-options">
+            <div class="section-container">
+                <div class="bts-content-card">
+                    <h2 class="bts-section-title">Éléments du Patrimoine Informatique</h2>
+                    <p class="bts-description">
+                        Le patrimoine informatique regroupe plusieurs catégories essentielles :
+                    </p>
+                    
+                    <!-- Liste des éléments constitutifs du patrimoine informatique -->
+                    <div class="options-list">
+                        <div class="option-item">
+                            <span class="option-bullet">•</span>
+                            <span class="option-text">Les équipements matériels (ordinateurs, serveurs, réseaux)</span>
+                        </div>
+                        <div class="option-item">
+                            <span class="option-bullet">•</span>
+                            <span class="option-text">Les logiciels et applications</span>
+                        </div>
+                        <div class="option-item">
+                            <span class="option-bullet">•</span>
+                            <span class="option-text">Les données et bases de données</span>
+                        </div>
+                        <div class="option-item">
+                            <span class="option-bullet">•</span>
+                            <span class="option-text">La documentation technique</span>
+                        </div>
+                        <div class="option-item">
+                            <span class="option-bullet">•</span>
+                            <span class="option-text">Les compétences et connaissances du personnel</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Conclusion de la section -->
+                    <p class="bts-description">
+                        Ces composants forment un ensemble stratégique qui doit être suivi et géré efficacement.
+                    </p>
+                </div>
+            </div>
+        </section>
          
-
-<section class="bts-examens">
-    <div class="section-container">
-        <div class="bts-content-card">
-            <h2 class="bts-section-title">Gestion du Cycle de Vie</h2>
-            
-            <div class="examens-table">
-                <div class="table-header">
-                    <div class="table-cell header-cell">Étapes principales</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Acquisition : choix des solutions adaptées aux besoins</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Déploiement : installation et configuration des systèmes</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Exploitation : maintenance, mises à jour et supervision</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Renouvellement : remplacement du matériel obsolète</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Recyclage : destruction sécurisée des données et recyclage responsable</div>
+        <!-- Section sur la gestion du cycle de vie du patrimoine informatique -->
+        <section class="bts-examens">
+            <div class="section-container">
+                <div class="bts-content-card">
+                    <h2 class="bts-section-title">Gestion du Cycle de Vie</h2>
+                    
+                    <!-- Tableau présentant les étapes du cycle de vie -->
+                    <div class="examens-table">
+                        <!-- En-tête du tableau -->
+                        <div class="table-header">
+                            <div class="table-cell header-cell">Étapes principales</div>
+                        </div>
+                        
+                        <!-- Étapes du cycle de vie -->
+                        <div class="table-row">
+                            <div class="table-cell">Acquisition : choix des solutions adaptées aux besoins</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="table-cell">Déploiement : installation et configuration des systèmes</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="table-cell">Exploitation : maintenance, mises à jour et supervision</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="table-cell">Renouvellement : remplacement du matériel obsolète</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="table-cell">Recyclage : destruction sécurisée des données et recyclage responsable</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-
-<section class="bts-debouches">
-    <div class="section-container">
-        <div class="bts-content-card">
-            <h2 class="bts-section-title">Enjeux et Perspectives</h2>
-            <p class="bts-description">
-                La gestion du patrimoine informatique garantit la sécurité, la performance et la pérennité des systèmes d’information. 
-                Elle s’appuie sur trois axes stratégiques : la sécurité, l’innovation et l’optimisation des coûts.
-            </p>
-            
-            <div class="debouches-table">
-                <div class="table-header-row">
-                    <div class="table-cell header-cell sisr-header">Sécurité</div>
-                    <div class="table-cell header-cell slam-header">Innovation</div>
-                </div>
-                
-                <div class="table-content-row">
-                    <div class="table-cell">Sauvegardes régulières et gestion des accès</div>
-                    <div class="table-cell">Migration vers le cloud computing</div>
-                </div>
-                
-                <div class="table-content-row">
-                    <div class="table-cell">Protection contre les virus et malwares</div>
-                    <div class="table-cell">Virtualisation et conteneurisation</div>
-                </div>
-                
-                <div class="table-content-row">
-                    <div class="table-cell">Chiffrement des données sensibles</div>
-                    <div class="table-cell">Intégration de l’IA et du Machine Learning</div>
-                </div>
-                
-                <div class="table-content-row">
-                    <div class="table-cell">Sensibilisation et formation des utilisateurs</div>
-                    <div class="table-cell">Internet des Objets (IoT) et solutions éco-responsables</div>
-                </div>
+        <!-- Section sur les enjeux et perspectives du patrimoine informatique -->
+        <section class="bts-debouches">
+            <div class="section-container">
+                <div class="bts-content-card">
+                    <h2 class="bts-section-title">Enjeux et Perspectives</h2>
+                    <p class="bts-description">
+                        La gestion du patrimoine informatique garantit la sécurité, la performance et la pérennité des systèmes d'information. 
+                        Elle s'appuie sur trois axes stratégiques : la sécurité, l'innovation et l'optimisation des coûts.
+                    </p>
+                    
+                    <!-- Tableau comparatif des enjeux sécurité vs innovation -->
+                    <div class="debouches-table">
+                        <!-- En-tête du tableau avec les deux axes stratégiques -->
+                        <div class="table-header-row">
+                            <div class="table-cell header-cell sisr-header">Sécurité</div>
+                            <div class="table-cell header-cell slam-header">Innovation</div>
+                        </div>
+                        
+                        <!-- Mesures de sécurité vs innovations technologiques -->
+                        <div class="table-content-row">
+                            <div class="table-cell">Sauvegardes régulières et gestion des accès</div>
+                            <div class="table-cell">Migration vers le cloud computing</div>
+                        </div>
+                        
+                        <div class="table-content-row">
+                            <div class="table-cell">Protection contre les virus et malwares</div>
+                            <div class="table-cell">Virtualisation et conteneurisation</div>
+                        </div>
+                        
+                        <div class="table-content-row">
+                            <div class="table-cell">Chiffrement des données sensibles</div>
+                            <div class="table-cell">Intégration de l'IA et du Machine Learning</div>
+                        </div>
+                        
+                        <div class="table-content-row">
+                            <div class="table-cell">Sensibilisation et formation des utilisateurs</div>
+                            <div class="table-cell">Internet des Objets (IoT) et solutions éco-responsables</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-   
+    <!-- Pied de page -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
+                <!-- Copyright -->
                 <p>&copy; @ Belhaouz Anass - 2025</p>
+                <!-- Liens du footer -->
                 <div class="footer-links">
                     <a href="index.html#contact">Accueil</a>
                     <a href="#plan"></a>
                     <a href="#mentions">Mentions légales</a>
                 </div>
+                <!-- Liens sociaux avec URLs réelles -->
                 <div class="social-links">
+                    <!-- Toggle de thème dans le footer -->
                     <div class="theme-toggle-footer">
                         <span></span>
                         <div class="" id="">
                             <div class=""></div>
                         </div>
                     </div>
+                    <!-- Lien GitHub avec URL réelle -->
                     <a href="https://github.com/Anass-Dev-Project" class="social-link" aria-label="GitHub">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
                         </svg>
                     </a>
+                    <!-- Lien LinkedIn avec URL réelle -->
                     <a href="http://linkedin.com/in/anass-belhaouz-59936b335" class="social-link" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
@@ -241,6 +269,7 @@
         </div>
     </footer>
 
+    <!-- Lien vers le fichier JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
